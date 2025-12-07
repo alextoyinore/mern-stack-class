@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        main, aside {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+</head>
+<body style="width: 100%; flex-direction: row; display: flex; justify-content: space-around; align-items: flex-start;">
+    <main style="max-width: 350px; text-align: center; margin: auto; border: 1px solid black; padding: 10px;">
+        <h1>Operators in Programming</h1>
+        <p>This page provides an overview of various operators used in programming languages.</p>
+        
+        <!-- Simple Calculator -->
+        <div>
+            <h2>Simple Calculator</h2>
+            <input type="number" id="num1" placeholder="First Number"><br><br>
+            <input type="number" id="num2" placeholder="Second Number"><br><br>
+            <select id="operator" title="operations">
+                <option value="+">Add(+)</option>
+                <option value="-">Subtract(-)</option>
+                <option value="*">Multiply(x)</option>
+                <option value="/">Divide(/)</option>
+            </select>
+            <button id="calculateBtn">Calculate</button>
+            <h3>Result: <span id="result">0</span></h3>
+        </div>
+    </main>
+
+    <aside style="max-width: 400px; text-align: center; margin: auto; border: 1px solid black; padding: 10px;">
+        <!-- Give me an AND and OR Truth Tables -->
+        <h2>Truth Tables</h2>
+        <h3>AND Operator (&&)</h3>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>A && B</th>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>true</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>true</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+        </table>
+
+        <h3>OR Operator (||)</h3>
+        <table border="1">
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>A || B</th>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>true</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>false</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>true</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>false</td>
+                <td>false</td>
+            </tr>
+        </table>
+    </aside>
+    <script src="oper.js" defer></script>
+</body>
+</html>

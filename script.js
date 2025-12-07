@@ -1,7 +1,12 @@
-// Prompt a simple greeting message when the page loads. request for name and greet name in alert
-window.onload = function() {
-    const name = prompt("Please enter your name:");
-    if (name) {
-        alert(`Hello, ${name}! Welcome to the blog page.`);
-    }
-};
+console.log("Hello from script.js");
+var username = "Guest";
+var adminUsername = "Admin";
+var adminTempPassword = "Admin@123";
+
+var name = 'John Doe';
+
+function greetUser(user) {
+    let name = 'Jane Smith';
+    return `Welcome, ${user}!`;
+}
+
